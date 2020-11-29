@@ -1,0 +1,478 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+body{
+	background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../kepek/hatter.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+}
+
+ul{
+	float: left;
+	list-style-type: none;
+	margin-top: 10px;
+	margin-left: 5px;
+	letter-spacing: 1px;
+}
+
+ul li{
+	display: block;
+	padding: 10px;
+	text-align: center;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	border: 3px solid transparent;
+	transition: 0.5s ease;
+}
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+ul li.kezdolap a{
+	background-color: #fff;
+	color: #000;
+	font-size: 20px;
+}
+
+ul li.kezdolap a:hover{
+	background-color: transparent;
+	color: #fff;
+}
+
+.kep-rolam{
+	max-width: 20%;
+	height: auto;
+	position: absolute;
+	top: 32%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 3px solid #fff;
+	border-radius: 50%;
+}
+
+.cim{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.cim h1{
+	color: #fff;
+	font-size: 70px;
+}
+
+.alcim{
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.alcim h1{
+	color: #fff;
+	font-size: 30px;
+}
+
+.main{
+	max-width: 1200px;
+}
+
+/*rólam*/
+
+.rolam{
+	text-align: center;
+}
+
+#rolamcim{
+	font-size: 30px;
+	font-weight: 800px;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	border-radius: 5px;
+	margin-top: 20px;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.5);
+	transform: translate(-50%, -50%);
+}
+
+#bevezeto{
+	font-weight: 600;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	border-radius: 5px;
+	margin-top: 25px;
+	padding: 10px;
+	background:rgba(255,255,255,0.5);
+	transform: translate(-50%, -50%);
+}
+
+.rolam h3{
+	letter-spacing: 1px;
+	padding: 3px;
+}
+
+#tanulmanyok{
+	font-weight: 550;
+	position: absolute;
+	top: 43%;
+	left: 27%;
+	max-width: 40%;
+	border-radius: 5px;
+	margin-top: 25px;
+	padding: 10px;
+	background:rgba(255,255,255,0.5);
+	transform: translate(-50%, -50%);
+	text-align: left;
+}
+
+#keszsegek{
+	font-weight: 550;
+	position: absolute;
+	top: 45%;
+	left: 72%;
+	min-width: 40%;
+	border-radius: 5px;
+	margin-top: 25px;
+	padding: 10px;
+	background:rgba(255,255,255,0.5);
+	transform: translate(-50%, -50%);
+	text-align: left;
+}
+
+#hobbik{
+	font-weight: 550;
+	position: absolute;
+	top: 66%;
+	left: 40%;
+	border-radius: 5px;
+	margin-top: 25px;
+	padding: 10px;
+	background:rgba(255,255,255,0.5);
+	transform: translate(-50%, -50%);
+	text-align: left;
+}
+
+#munkak{
+	font-weight: 550;
+	position: absolute;
+	top: 65%;
+	left: 65%;
+	border-radius: 5px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 10px;
+	background:rgba(255,255,255,0.5);
+	transform: translate(-50%, -50%);
+	text-align: left;
+}
+
+@media only screen and (max-width: 700px){
+	#bevezeto{
+		top: 25%;
+		left: 50%;
+	}
+
+	#tanulmanyok{
+		top: 51%;
+		left: 50%;
+	}
+
+	#keszsegek{
+		top: 82%;
+		left: 50%;
+	}
+
+	#hobbik{
+		top: 106%;
+		left: 50%;
+	}
+
+	#munkak{
+		top: 121%;
+		left: 50%;
+	}
+}
+
+/*munkáim*/
+
+body{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+}
+
+
+
+.tarolo{
+	font-weight: 550;
+	width: 150%;
+	max-width: 120rem;
+    height: 100vh;
+	margin: auto;
+	text-align: center;
+	border-radius: 5px
+}
+
+#munkaimszoveg h3{
+	letter-spacing: 1px;
+	padding: 2px;
+}
+
+
+.tarolo .galeria {
+	position: relative;
+	height: 170%;
+	width: 95%;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 20px 0;
+	display: grid;
+	grid-template-columns: 0.8fr 0.3fr 1fr 1fr;
+	grid-auto-flow: auto auto auto auto;
+	grid-template-areas:
+	"kep1 kep1 kep2 kep3"
+	"kep4 kep5 kep5 kep3"
+	"kep4 kep5 kep5 kep6"
+	"kep4 kep7 kep7 kep6";
+	grid-gap: 20px;
+}
+
+.tarolo .galeria .rajzaim{
+	height: auto;
+	width: auto;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+
+#munkaimszoveg{
+	margin-top: 25px;
+	padding: 0 1.5rem;
+	padding-right: 1rem;
+	margin-right: 40px;
+	background-color: rgb(255,255,255,0.5);
+	grid-area: munkaimszoveg;
+	border-radius: var(--main-radius);
+	padding-top: var(--main-padding);
+}
+
+#kep1{
+	background: url("../kepek/1.jpg");
+	grid-area: kep1;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	background-position: center;
+}
+
+#kep2{
+	background: url("../kepek/2.jpg");
+	grid-area: kep2;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	background-position: center;
+}
+
+#kep3{
+	background: url("../kepek/3.jpg");
+	grid-area: kep3;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	background-position: center;
+}
+
+#kep4{
+	background: url("../kepek/4.jpg");
+	grid-area: kep4;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	background-position: center;
+}
+
+#kep5{
+	background: url("../kepek/5.jpg");
+	grid-area: kep5;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	background-position: center;
+}
+
+#kep6{
+	background: url("../kepek/6.jpg");
+	grid-area: kep6;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	background-position: center;
+}
+
+#kep7{
+	background: url("../kepek/7.jpg");
+	grid-area: kep7;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	background-position: center;
+}
+
+/*mobil*/
+@media only screen and (max-width: 1300px){
+.tarolo .galeria {
+	position: relative;
+	height: 100%;
+	width: 95%;
+	margin-left: 0px;
+	margin-right: 20px;
+	padding: 20px 0;
+	display: grid;
+	grid-template-columns: 0.8fr 0.3fr 1fr 1fr;
+	grid-auto-flow: auto auto auto auto;
+	grid-template-areas:
+	"kep1 kep1 kep2 kep3"
+	"kep4 kep5 kep5 kep3"
+	"kep4 kep5 kep5 kep6"
+	"kep4 kep7 kep7 kep6";
+	grid-gap: 20px;
+}
+}
+
+@media only screen and (max-width: 900px){
+	.tarolo .galeria {
+		position: relative;
+		height: 160%;
+		width: 90%;
+		margin-left: 0px;
+		padding: 45px 0;
+		display: grid;
+		grid-template-columns: 1fr 0.3fr 1fr;
+		grid-auto-rows: 1fr 1fr 0.5fr 1fr;
+		grid-template-areas:
+			"kep1 kep1 kep2"
+			"kep4 kep5 kep5"
+			"kep4 kep5 kep5"
+			"kep4 kep7 kep7"
+			"kep3 kep6 kep6"
+			"kep3 kep6 kep6";
+		grid-gap: 10px;
+}
+	.rajzaim{
+		min-height: 150px;
+
+	}
+}
+
+@media only screen and (max-width: 700px){
+	.tarolo .galeria {
+		position: relative;
+		height: 400%;
+		width: 90%;
+		margin-left: 0px;
+		padding: 45px 0;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-auto-rows: 1fr 2fr 3fr 1fr 3fr 3fr 2fr;
+		grid-template-areas: 
+			"kep1"
+			"kep5"
+			"kep3"
+			"kep7"
+			"kep4"
+			"kep6"
+			"kep2";
+		grid-gap: 10px;
+}
+	.rajzaim{
+		min-height: 150px;
+
+	}
+}
+
+/*grafikai tervek*/
+
+
+.grafszov{
+	min-width: 70%;
+	font-weight: 550;
+	position: absolute;
+	top: 15%;
+	left: 55%;
+	border-radius: 5px;
+	margin-top: 15vh;
+	margin-bottom: 25px;
+	padding: 10px;
+	background:rgba(255,255,255,0.5);
+	transform: translate(-50%, -50%);
+}
+
+.kepekszovege{
+	font-size: 25px;
+	margin-top: 70vh;
+	padding-bottom: 20px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.tervek {
+	position: relative;
+	top: 68vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 90px;
+	height: 800%;
+	width: 70%;
+	padding-top: 45px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: 1fr 1fr 1fr 2fr 3fr 4fr;
+	grid-template-areas: 
+		"terv1"
+		"terv2"
+		"terv3"
+		"terv4"
+		"layout1"
+		"layout2"
+		"layout3";
+	grid-row-gap: 20vh;
+}
+
+@media only screen and (max-width: 750px){
+	.grafszov{
+		top: 30%;
+		left: 55%;
+	}
+
+	.kepekszovege{
+		margin-top: 100vh;
+		margin-bottom: 0;
+		transform: translate(-50%, 0);
+	}
+
+	.tervek{
+		top: 625px;
+		margin-bottom: 150px;
+		padding: 0;
+	}
+}
